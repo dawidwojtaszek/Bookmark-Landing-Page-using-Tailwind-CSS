@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero-section::after{
+    content: '';
+    background-color: hsl(231, 69%, 60%);
+    height: 350px;
+    width: 510px;
+    border-bottom-left-radius: 38%;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    z-index: -1;
+}
+
+
+@media(max-width:976px){
+    #hero-section::after {
+        display: none;
+        }
+}
+#mobile-hero::after{
+        content: '';
+            background-color: hsl(231, 69%, 60%);
+            height: 200px;
+            width: 80%;
+            border-bottom-left-radius: 95px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }

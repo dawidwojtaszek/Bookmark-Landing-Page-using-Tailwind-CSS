@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Bookmark landing page</title>
+  </head>
+  <body>
+    <header
+      class="flex justify-between max-w-[1100px] mx-auto items-center mt-10 px-7 md:mt-12 lg:px-0"
+    >
+      <img src="./images/logo-bookmark.svg" alt="logo" />
+      <nav class="hidden md:flex">
+        <ul class="flex justify-start items-center">
+          <li class="ml-12">
+            <a class="text-veryDarkBlue uppercase hover:text-softRed" href="#"
+              >Features</a
+            >
+          </li>
+          <li class="ml-12">
+            <a class="text-veryDarkBlue uppercase hover:text-softRed" href="#"
+              >Pricing</a
+            >
+          </li>
+          <li class="ml-12">
+            <a class="text-veryDarkBlue uppercase hover:text-softRed" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="bg-softRed border-softRed border-2 text-white uppercase rounded-md py-2 px-7 ml-12 font-medium hover:bg-white hover:border-2 hover:text-softRed"
+        >
+          Login
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="max-w-[1440px] mx-auto relative" id="hero-section">
+        <div
+          class="flex flex-col-reverse max-w-[1110px] mx-auto items-center md:flex-row md:justify-between md:h-[600px] gap-16 md:gap-0"
+          role="none presentation"
+        >
+          <div
+            class="flex flex-col px-7 lg:px-0 items-center gap-8 md:items-start"
+            role="none presentation"
+          >
+            <h1
+              class="text-4xl text-veryDarkBlue font-bold text-center md:text-left"
+            >
+              A Simple Bookmark Manager
+            </h1>
+            <p class="text-grayishBlue text-center md:text-left">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="flex gap-4" role="none presentation">
+              <button
+                class="bg-softBlue text-white font-medium h-12 px-6 rounded-md border-2 border-softBlue hover:text-softBlue hover:bg-white"
+              >
+                Get it on Chrome
+              </button>
+              <button
+                class="bg-firefoxButton text-veryDarkBlue border-firefoxButton border-2 font-medium h-12 px-6 rounded-md shadow-sm hover:border-veryDarkBlue"
+              >
+                Get it on Chrome
+              </button>
+            </div>
+          </div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt="hero-image"
+            class="relative lg:-right-28 mt-11 hidden md:block"
+            id="hero-image"
+          />
+          <div
+            class="flex justify-center w-full md:hidden relative mt-20"
+            role="none presentation"
+            id="mobile-hero"
+          >
+            <img src="./images/illustration-hero.svg" alt="hero-image" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
