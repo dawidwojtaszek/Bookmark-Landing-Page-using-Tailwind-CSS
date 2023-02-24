@@ -2,32 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero-section::after{
-    content: '';
-    background-color: hsl(231, 69%, 60%);
-    height: 350px;
-    width: 510px;
-    border-bottom-left-radius: 38%;
+#hero-section::after {
+  content: "";
+  background-color: hsl(231, 69%, 60%);
+  height: 350px;
+  width: 40%;
+  border-bottom-left-radius: 38%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#mobile-hero::after {
+  content: "";
+  background-color: hsl(231, 69%, 60%);
+  height: 200px;
+  width: 80%;
+  border-bottom-left-radius: 95px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.active {
+  position: relative;
+  color: hsl(229, 31%, 21%);
+}
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: hsl(0, 94%, 66%);
+  left: 0;
+  right: 0;
+}
+.active:hover {
+  color: hsl(229, 31%, 21%) !important;
+}
+
+#feature-tab-content {
+  position: relative;
+}
+#feature-tab-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(231, 69%, 60%);
+  border-bottom-right-radius: 30%;
+  height: 350px;
+  width: 40%;
+  z-index: -1;
+}
+
+[data-tab-content] {
+  display: none;
+}
+.current[data-tab-content] {
+  display: flex;
+}
+
+@media (max-width: 976px) {
+  #hero-section::after {
+    display: none;
+  }
+  .active::after {
+    content: "";
     position: absolute;
-    bottom:0;
-    right: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    width: 140px;
+    left: calc(50% - 70px);
+  }
+  #feature-tab-content::after {
+    display: none;
+  }
+  .tab-image-box {
+    position: relative;
+  }
+  .tab-image-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(231, 69%, 60%);
+    border-bottom-right-radius: 30%;
+    height: 200px;
+    width: 70%;
     z-index: -1;
+  }
 }
-
-
-@media(max-width:976px){
-    #hero-section::after {
-        display: none;
-        }
-}
-#mobile-hero::after{
-        content: '';
-            background-color: hsl(231, 69%, 60%);
-            height: 200px;
-            width: 80%;
-            border-bottom-left-radius: 95px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            z-index: -1;
-        }
