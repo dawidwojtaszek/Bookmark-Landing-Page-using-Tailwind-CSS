@@ -64,6 +64,9 @@
 .current[data-tab-content] {
   display: flex;
 }
+.close {
+  display: none;
+}
 
 @media (max-width: 976px) {
   #hero-section::after {

@@ -25,7 +25,7 @@
     <header
       class="flex justify-between max-w-[1100px] mx-auto items-center mt-10 px-7 md:mt-12 lg:px-0"
     >
-      <img src="./images/logo-bookmark.svg" alt="logo" />
+      <img src="./images/logo-bookmark.svg" alt="logo" id="logo" />
       <nav class="hidden md:flex">
         <ul class="flex justify-start items-center">
           <li class="ml-12">
@@ -49,6 +49,45 @@
         >
           Login
         </button>
+      </nav>
+      <button class="md:hidden z-20" id="hamburger">
+        <img src="./images/icon-hamburger.svg" alt="hamburger-menu" />
+      </button>
+      <nav
+        class="absolute top-0 right-0 left-0 bottom-0 bg-veryDarkBlue opacity-95 z-10 px-7 py-10 close md:hidden"
+        id="mobileMenu"
+      >
+        <img src="./images/logo-bookmark-mono.svg" alt="logo-menu" />
+        <div class="flex flex-col justify-between h-full py-10 items-center">
+          <ul class="flex flex-col w-full">
+            <li class="py-6 border-grayishBlue border-t w-full text-center">
+              <a href="#" class="text-white uppercase">Features</a>
+            </li>
+            <li class="py-6 border-grayishBlue border-t w-full text-center">
+              <a href="#" class="text-white uppercase">Pricing</a>
+            </li>
+            <li
+              class="py-6 border-grayishBlue border-t border-b w-full text-center"
+            >
+              <a href="#" class="text-white uppercase">Contact</a>
+            </li>
+            <li class="py-6">
+              <button
+                class="w-full py-3 text-white border-white border-2 rounded-md"
+              >
+                LOGIN
+              </button>
+            </li>
+          </ul>
+          <div class="flex justify-center gap-10" role="none presentation">
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="facebook-logo"
+            /></a>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="twitter-logo"
+            /></a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>

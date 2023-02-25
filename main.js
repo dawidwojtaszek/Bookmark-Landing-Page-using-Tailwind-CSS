@@ -1,3 +1,36 @@
+// ----------------MOBILE MENU------------------------
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeIcon = document.createElement("img");
+const logo = document.getElementById("logo");
+
+closeIcon.alt = "close-menu-icon";
+closeIcon.src = "./images/icon-close.svg";
+
+const hamburgerIcon = document.createElement("img");
+hamburgerIcon.alt = "open-menu-icon";
+hamburgerIcon.src = "./images/icon-hamburger.svg";
+
+function setIcon(icon) {
+  hamburger.innerHTML = "";
+  hamburger.appendChild(icon);
+}
+
+function handleHamburgerClick(e) {
+  if (mobileMenu.classList.contains("close")) {
+    setIcon(closeIcon);
+    logo.style.visibility = "hidden";
+    mobileMenu.classList.remove("close");
+  } else {
+    mobileMenu.classList.add("close");
+    setIcon(hamburgerIcon);
+    logo.style.visibility = "visible";
+  }
+}
+
+hamburger.addEventListener("click", handleHamburgerClick);
+
+// ----------------TABS-------------------------------
 const btn = document.querySelectorAll("[data-tab-button]");
 const tabs = document.querySelectorAll("[data-tab-content]");
 
