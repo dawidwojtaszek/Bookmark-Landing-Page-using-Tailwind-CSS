@@ -67,6 +67,11 @@
 .close {
   display: none;
 }
+.card {
+  background-image: url("../images/bg-dots.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 96px left 0;
+}
 
 @media (max-width: 976px) {
   #hero-section::after {

@@ -48,3 +48,15 @@ btn.forEach((button) => {
     button.classList.add("active");
   });
 });
+
+// -----------------FAQ-Hover-------------------------
+const collapseTabs = document.querySelectorAll(".collapse-element");
+
+collapseTabs.forEach((element) => {
+  element.addEventListener("mouseenter", (e) => {
+    e.target.childNodes[3].firstElementChild.style.color = "hsl(0, 94%, 66%)";
+  });
+  element.addEventListener("mouseleave", (e) => {
+    e.target.childNodes[3].firstElementChild.style.color = "hsl(229, 31%, 21%)";
+  });
+});
