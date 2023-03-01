@@ -72,7 +72,10 @@
   background-repeat: no-repeat;
   background-position: bottom 96px left 0;
 }
-
+.invalid-input {
+  background-color: green;
+  border: hsl(0, 94%, 66%) 1px solid;
+}
 @media (max-width: 976px) {
   #hero-section::after {
     display: none;
