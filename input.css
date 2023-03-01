@@ -72,10 +72,11 @@
   background-repeat: no-repeat;
   background-position: bottom 96px left 0;
 }
-.invalid-input {
-  background-color: green;
-  border: hsl(0, 94%, 66%) 1px solid;
+
+.icon-logo:hover path {
+  fill: hsl(0, 94%, 66%);
 }
+
 @media (max-width: 976px) {
   #hero-section::after {
     display: none;
