@@ -1206,6 +1206,11 @@ video {
   border-color: hsl(229 31% 21% / var(--tw-border-opacity));
 }
 
+.hover\:border-softRed:hover {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
